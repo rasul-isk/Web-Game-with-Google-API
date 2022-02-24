@@ -1,0 +1,81 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: High Score Table, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'RXYVCA,HHBJDO'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 20, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: winnerText
+    layout_properties: {grid_position: 'LLTSSU,KEJAGA'}
+    data_bindings:
+    - {property: text, code: 'self.item[''winnerText'']'}
+  - type: DataGrid
+    properties:
+      role: null
+      columns:
+      - {id: RXDLRM, title: Position, data_key: place, width: 80, expand: false}
+      - {id: PQLQHK, title: Name, data_key: player_name, width: 145, expand: false}
+      - {id: CUDFMD, title: Taken Time, data_key: time, width: 112, expand: false}
+      - {id: AVFTJT, title: Source Word, data_key: sourceword, width: 151, expand: false}
+      - {id: HLWJRL, title: Guesses, data_key: guesses}
+      auto_header: true
+      tooltip: ''
+      border: ''
+      foreground: ''
+      rows_per_page: 10
+      visible: true
+      wrap_on: never
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      background: theme:White
+    name: data_grid_1
+    layout_properties: {grid_position: 'WBNPMD,QJBCKH'}
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: table.template}
+      name: repeating_panel_1
+      layout_properties: {}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Back to menu, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:backward'}
+    name: menu
+    layout_properties: {grid_position: 'WGNZFZ,FGXYKK'}
+    event_bindings: {click: menu_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Show lOgs, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#d01616',
+      bold: false, underline: false, icon: 'fa:database'}
+    name: logs
+    layout_properties: {grid_position: 'WGNZFZ,YPQMGP'}
+    event_bindings: {click: logs_click}
+  - type: Button
+    properties: {role: secondary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: play Game, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Secondary
+        700', bold: false, underline: false, icon: 'fa:play'}
+    name: play
+    layout_properties: {grid_position: 'WGNZFZ,QPDRTI'}
+    event_bindings: {click: play_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

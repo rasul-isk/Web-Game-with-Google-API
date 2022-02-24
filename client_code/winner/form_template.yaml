@@ -1,0 +1,55 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Congratulations. You won!, font_size: 28, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: heading
+    layout_properties: {grid_position: 'NDAWTR,TNYTDF'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: large, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: winner
+    layout_properties: {grid_position: 'HKBYXF,VKWRHS'}
+    data_bindings:
+    - {property: text, code: 'self.item[''winnerText'']'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Enter your name here...,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: name
+    layout_properties: {grid_position: 'NMICIQ,TXFAFR'}
+    data_bindings:
+    - {property: text, code: 'self.item[''name'']', writeback: true}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Publish My results, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:check-circle'}
+    name: submit
+    layout_properties: {grid_position: 'NMICIQ,EBMDHK'}
+    event_bindings: {click: submit_click}
+  - type: Button
+    properties: {role: secondary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Back to menu, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:backward'}
+    name: menu
+    layout_properties: {grid_position: 'NMICIQ,CQMXYM'}
+    event_bindings: {click: menu_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

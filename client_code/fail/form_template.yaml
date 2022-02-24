@@ -1,0 +1,54 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'You lost! ', font_size: 28, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'VGDXBX,HBEHFZ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 20, font: '', spacing_above: small, icon_align: left,
+      spacing_below: large, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: reasons
+    layout_properties: {grid_position: 'RMZWNP,FUVZDW'}
+    data_bindings:
+    - {property: text, code: 'self.item[''reasons'']'}
+  - type: Button
+    properties: {role: secondary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Back to Main Menu, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:backward'}
+    name: menu
+    layout_properties: {grid_position: 'UJFISO,IYLATH'}
+    event_bindings: {click: menu_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Show Logs, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#e11414',
+      bold: false, underline: false, icon: 'fa:database'}
+    name: log
+    layout_properties: {grid_position: 'UJFISO,DUMNUT'}
+    event_bindings: {click: log_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Play Again, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:play'}
+    name: play
+    layout_properties: {grid_position: 'UJFISO,KLLTIS'}
+    event_bindings: {click: play_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

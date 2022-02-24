@@ -1,0 +1,77 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Let's start!, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'SMUZQK,TKVNLP'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Your word is:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'RFBECI,QOFWNJ', full_width_row: false}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 22, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: word
+    layout_properties: {grid_position: 'RFBECI,DUDVSB', full_width_row: false}
+    data_bindings:
+    - {property: text, code: 'self.item[''word'']'}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'The clock is ticking...
+
+
+        Enter your seven words in this box, separating each word by a space:', font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'QDFMIN,LVVOKN'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Enter asnwer here...,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: answer_area
+    layout_properties: {grid_position: 'ZHYORX,CFGYVI'}
+    event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''answer'']', writeback: true}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Back to menu, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:backward'}
+    name: menu
+    layout_properties: {grid_position: 'YSRABJ,QOWVSF', full_width_row: false}
+  - type: Button
+    properties: {role: secondary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Refresh Word, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:refresh'}
+    name: refresh
+    layout_properties: {grid_position: 'YSRABJ,YEBDKS', full_width_row: false}
+    event_bindings: {click: refresh_click}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: FINISH!, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: green, bold: false,
+      underline: false, icon: 'fa:check'}
+    name: finish
+    layout_properties: {grid_position: 'YSRABJ,GAIFWS', full_width_row: false}
+    event_bindings: {click: finish_click}

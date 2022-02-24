@@ -1,0 +1,224 @@
+services:
+- source: /runtime/services/google.yml
+  client_config:
+    app_files:
+    - capabilities: {canCopy: true, canEdit: true}
+      editable: true
+      copyable: true
+      webContentLink: https://drive.google.com/uc?id=128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC&export=download
+      embedLink: https://drive.google.com/file/d/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC/preview?usp=drivesdk
+      fileExtension: txt
+      copyRequiresWriterPermission: false
+      python_name: words_txt
+      explicitlyTrashed: false
+      lastModifyingUser:
+        kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      shared: true
+      createdDate: '2022-02-16T19:48:36.342Z'
+      id: 128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC
+      owners:
+      - kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {kind: drive#parentReference, id: 0APZ7OAF78dmuUk9PVA, selfLink: 'https://www.googleapis.com/drive/v2/files/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC/parents/0APZ7OAF78dmuUk9PVA',
+        parentLink: 'https://www.googleapis.com/drive/v2/files/0APZ7OAF78dmuUk9PVA',
+        isRoot: true}
+      labels: {starred: false, hidden: false, trashed: false, restricted: false, viewed: true}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/text/plain
+      headRevisionId: 0B_Z7OAF78dmuZFU3Qzl6MkN0Z2tnSFh0MW80RUdlRU43KzFJPQ
+      permission: roclient
+      selfLink: https://www.googleapis.com/drive/v2/files/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC
+      lastViewedByMeDate: '2022-02-18T15:11:47.739Z'
+      userPermission: {kind: drive#permission, etag: '"Oxpalmjaz1UpBDL9zbqxXCiYCVs"',
+        id: me, selfLink: 'https://www.googleapis.com/drive/v2/files/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC/permissions/me',
+        role: owner, type: user, pendingOwner: false}
+      lastModifyingUserName: Rasul Iskandarov
+      etag: '"MTY0NTA0MDk2MDEwMA"'
+      kind: drive#file
+      modifiedByMeDate: '2022-02-16T19:49:20.100Z'
+      title: words.txt
+      version: '8'
+      appDataContents: false
+      writersCanShare: true
+      fileSize: '976241'
+      alternateLink: https://drive.google.com/file/d/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC/view?usp=drivesdk
+      mimeType: text/plain
+      modifiedDate: '2022-02-16T19:49:20.100Z'
+      downloadUrl: https://www.googleapis.com/drive/v2/files/128uDtFqWIoDFP6hmjo7mfFPvtrJtzXgC?alt=media&source=downloadUrl
+      quotaBytesUsed: '976241'
+      md5Checksum: 7d06f540d0a65a46e6d65c5254edb21f
+      originalFilename: words.txt
+      thumbnailLink: https://lh3.googleusercontent.com/T3-T4iF67R7DVg5cnClylXpF7EmK-TBBum6i-um_eNkZ_EZV01-radHRB6Zjb_PH4MaZg69jCv2x4W4=s220
+      ownerNames: [Rasul Iskandarov]
+    - capabilities: {canCopy: true, canEdit: true}
+      editable: true
+      copyable: true
+      webContentLink: https://drive.google.com/uc?id=1STvTO24Wl17cZi6njtnQscinq1XvJs0D&export=download
+      embedLink: https://drive.google.com/file/d/1STvTO24Wl17cZi6njtnQscinq1XvJs0D/preview?usp=drivesdk
+      fileExtension: ''
+      copyRequiresWriterPermission: false
+      python_name: big_words
+      explicitlyTrashed: false
+      lastModifyingUser:
+        kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      shared: false
+      createdDate: '2022-02-18T14:44:02.728Z'
+      id: 1STvTO24Wl17cZi6njtnQscinq1XvJs0D
+      owners:
+      - kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {kind: drive#parentReference, id: 0APZ7OAF78dmuUk9PVA, selfLink: 'https://www.googleapis.com/drive/v2/files/1STvTO24Wl17cZi6njtnQscinq1XvJs0D/parents/0APZ7OAF78dmuUk9PVA',
+        parentLink: 'https://www.googleapis.com/drive/v2/files/0APZ7OAF78dmuUk9PVA',
+        isRoot: true}
+      labels: {starred: false, hidden: false, trashed: false, restricted: false, viewed: true}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/text/plain
+      headRevisionId: 0B_Z7OAF78dmudWhiNkljbVJWTVdZNTMwMmFFYlZYSmZsbHVjPQ
+      permission: roclient
+      selfLink: https://www.googleapis.com/drive/v2/files/1STvTO24Wl17cZi6njtnQscinq1XvJs0D
+      lastViewedByMeDate: '2022-02-24T01:24:52.635Z'
+      userPermission: {kind: drive#permission, etag: '"WgBoBXxVzdVF-EiEN3jki6WrPmk"',
+        id: me, selfLink: 'https://www.googleapis.com/drive/v2/files/1STvTO24Wl17cZi6njtnQscinq1XvJs0D/permissions/me',
+        role: owner, type: user, pendingOwner: false}
+      lastModifyingUserName: Rasul Iskandarov
+      etag: '"MTY0NTY2NTg5MjYzNQ"'
+      kind: drive#file
+      modifiedByMeDate: '2022-02-24T01:24:52.635Z'
+      title: big_words
+      version: '407'
+      appDataContents: false
+      writersCanShare: true
+      fileSize: '453438'
+      alternateLink: https://drive.google.com/file/d/1STvTO24Wl17cZi6njtnQscinq1XvJs0D/view?usp=drivesdk
+      mimeType: text/plain
+      modifiedDate: '2022-02-24T01:24:52.635Z'
+      downloadUrl: https://www.googleapis.com/drive/v2/files/1STvTO24Wl17cZi6njtnQscinq1XvJs0D?alt=media&source=downloadUrl
+      quotaBytesUsed: '453438'
+      md5Checksum: ead373c1058642ac53fa1edc3dddaf90
+      originalFilename: big_words
+      thumbnailLink: https://lh3.googleusercontent.com/woIHytuuz6-ECIrMnpZTPb8pfVyq6Fruybe-FdAIvFRa4zsvL-TYDyeW60LZZRleR1NZYHcqztJG6oLi=s220
+      ownerNames: [Rasul Iskandarov]
+    - capabilities: {canCopy: true, canEdit: true}
+      editable: true
+      copyable: true
+      webContentLink: https://drive.google.com/uc?id=1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk&export=download
+      embedLink: https://drive.google.com/file/d/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk/preview?usp=drivesdk
+      fileExtension: ''
+      copyRequiresWriterPermission: false
+      python_name: all_words
+      explicitlyTrashed: false
+      lastModifyingUser:
+        kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      shared: false
+      createdDate: '2022-02-18T14:44:19.899Z'
+      id: 1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk
+      owners:
+      - kind: drive#user
+        displayName: Rasul Iskandarov
+        picture: {url: 'https://lh3.googleusercontent.com/a-/AOh14GiIvd_6xqsc7xe4sOVFDcqFhkn-z1xzV-eZv-M3gmw=s64'}
+        isAuthenticatedUser: true
+        permissionId: 08581013433650641846
+        emailAddress: rasul.iskewnderov9r12014@gmail.com
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {kind: drive#parentReference, id: 0APZ7OAF78dmuUk9PVA, selfLink: 'https://www.googleapis.com/drive/v2/files/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk/parents/0APZ7OAF78dmuUk9PVA',
+        parentLink: 'https://www.googleapis.com/drive/v2/files/0APZ7OAF78dmuUk9PVA',
+        isRoot: true}
+      labels: {starred: false, hidden: false, trashed: false, restricted: false, viewed: true}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/text/plain
+      headRevisionId: 0B_Z7OAF78dmuQno1U2gvZnFpK2RNMm1jRWhoWEk0Wk9zOVNNPQ
+      permission: roclient
+      selfLink: https://www.googleapis.com/drive/v2/files/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk
+      lastViewedByMeDate: '2022-02-24T01:24:50.784Z'
+      userPermission: {kind: drive#permission, etag: '"m14eM61XUsCPRoFo7HFPfpyCW4Y"',
+        id: me, selfLink: 'https://www.googleapis.com/drive/v2/files/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk/permissions/me',
+        role: owner, type: user, pendingOwner: false}
+      lastModifyingUserName: Rasul Iskandarov
+      etag: '"MTY0NTY2NTg5MDc4NA"'
+      kind: drive#file
+      modifiedByMeDate: '2022-02-24T01:24:50.784Z'
+      title: all_words
+      version: '407'
+      appDataContents: false
+      writersCanShare: true
+      fileSize: '666375'
+      alternateLink: https://drive.google.com/file/d/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk/view?usp=drivesdk
+      mimeType: text/plain
+      modifiedDate: '2022-02-24T01:24:50.784Z'
+      downloadUrl: https://www.googleapis.com/drive/v2/files/1PHawVkMA6MHI1fHa1FeJBwwmBtOCS8pk?alt=media&source=downloadUrl
+      quotaBytesUsed: '666375'
+      md5Checksum: 7062880f81b7298b14619853a4350007
+      originalFilename: all_words
+      thumbnailLink: https://lh3.googleusercontent.com/d1AIXAK91TqiTpkoTGO-7qrvn4lxN17ozaDQlrk8UqsPrDw_A23oBf78HF0ND-hhZah7e6P-UfGoUcfE=s220
+      ownerNames: [Rasul Iskandarov]
+  server_config: {enc_delegation_refresh_token: rCMBweUjDx3hvJiGdIk3ZlZ7WyHxPeVKQVi21uo43LIpVLS13Ug28/7aEQe+SLDfv6cws86lusSJEkqhJnQP1nkfhwhviJcKF+ruo9cHSKEzkpQN7BrKRvLxqraV1aKwvBekix47SSWol+D9pkReYfdoBLlIqIqY/V0q+/Rp3Pv0gOY1FHwC6cyqTllsJCezd7BKLGyejlwtTejhLd00kUbu25LtulyWXrNYuPFavRKaEL1MAkVGXIhxMHA6fEKNCRt6fedccAfZQJ9DpIox8CuDZEFB1BLu6LKrNtcx2yVn5BHBJg1zRTxPN4jRdA==}
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+package_name: C00246498_wordgame4
+allow_embedding: false
+name: C00246498-wordgame4
+runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+metadata: {}
+startup_form: Homepage
+db_schema:
+  score_table:
+    title: score_table
+    client: search
+    server: full
+    columns:
+    - name: id
+      admin_ui: {width: 200}
+      type: number
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: timeTaken
+      admin_ui: {width: 200}
+      type: number
+    - name: sourceword
+      admin_ui: {width: 200}
+      type: string
+    - name: guesses
+      admin_ui: {width: 200}
+      type: string
+  logs:
+    title: logs
+    client: none
+    server: full
+    columns:
+    - name: id
+      admin_ui: {width: 200}
+      type: number
+    - name: messages
+      admin_ui: {width: 200}
+      type: string
+renamed: true
